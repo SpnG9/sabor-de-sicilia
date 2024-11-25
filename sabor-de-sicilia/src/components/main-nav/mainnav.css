@@ -1,0 +1,59 @@
+#main-nav {
+  background-color: var(--primary);
+}
+
+#logo-btn {
+  height: 18vh;
+  transition: 0.2s all ease-in-out;
+}
+
+#logo-btn:hover {
+  content: url("./../../assets/images/logo/hover.png");
+}
+
+/* Reservation Button */
+#reservation-btn {
+  border: 2px solid var(--dark);
+  border-radius: 10px;
+  color: var(--dark);
+  z-index: 1;
+  background: var(--secondary);
+  position: relative;
+  transition: 0.2s all ease-in-out;
+  overflow: hidden;
+}
+
+#reservation-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--dark);
+  z-index: -1;
+  transition: all 250ms;
+}
+
+#reservation-btn:hover {
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+#reservation-btn:hover::before {
+  width: 100%;
+}
+
+/* Focus for accessibility */
+#main-nav button:focus {
+  border-radius: 10px;
+  background-color: var(--secondary);
+  color: var(--dark);
+  border: 2px solid var(--dark);
+  outline: none;
+}
+
+#reservation-btn:focus {
+box-shadow: 0 0 0 5px var(--dark) !important;
+background-color: var(--light) !important;
+}

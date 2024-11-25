@@ -1,0 +1,7 @@
+.top-nav-btn {
+  transition: .2s all ease-in-out;
+}
+
+.top-nav-btn:hover {
+  color: var(--primary);
+}

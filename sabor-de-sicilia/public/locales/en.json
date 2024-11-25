@@ -1,0 +1,35 @@
+{
+  "top-nav": {
+    "reservation": "Reservations:"
+  },
+  "main-nav": {
+    "contacts": "Contacts",
+    "location": "El chiringuito",
+    "menu": "Menu",
+    "history": "Our history",
+    "jobs": "Carreers",
+    "resevation": "Reserve now!"
+  },
+  "descriptions": {
+    "homepage": {
+      "welcome-title": "Welcome to our chiringuito, Sabor de Sicilia!",
+      "welcome-content": "At our chiringuito, Sicily and Spain meet in each bite. Here, sicilian tradition mixes with the vibrant flavors of Spain. Relax at our place on the beach when you'll want with whom you'll want.",
+      "journey-title": "A journey of flavors",
+      "journey-content": "Nuestro menú combina lo mejor de ambas culturas: tapas españolas, platos tradicionales sicilianos y creaciones únicas que fusionan estos dos mundos culinarios. Ya sea a la hora del almuerzo o en la cena, vivirás una experiencia gastronómica sin igual.Reserva tu mesa y descubre la magia de Sabor De Sicilia, donde los sabores de Italia y España se unen en perfecta armonía. ¡Te esperamos! Our menu combines the best of both cultures: here you can have spanish tapas, traditional sicilian plates and unique creations that create a special fusion of these two great culinary worlds. It doesn't matter if you'll come here for lunch or for dinner, your food experience will be great. Reserve a table now and discover the magic behind Sabor de Sicilia, and the perfect harmony between the flavors of Sicily and Spain. We'll meet you here!"
+    },
+    "cards": {
+      "food": "Food",
+      "drinks": "Drinks",
+      "restaurant": "El chiringuito"
+    },
+    "pre-foot": {
+      "info": "Would you like more information?",
+      "subscription": "Subscribe now to our newsletter. You will receive information about new additions to our menu, career opportunities and an a 10% discount to your first reservation!"
+    },
+    "input": {
+      "placeholders": {
+        "pre-foot-input": "Enter your email address ..."
+      }
+    }
+  }
+}

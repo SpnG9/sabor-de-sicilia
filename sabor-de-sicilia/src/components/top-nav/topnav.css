@@ -1,0 +1,25 @@
+#top-nav {
+  background-color: var(--light);
+  font-family: var(--content);
+  color: var(--dark);
+}
+
+#top-nav a {
+  transition: .2s all ease-in-out;
+}
+
+#top-nav a:hover {
+  color: var(--primary);
+}
+
+/* Focus for accessibility */
+.top-nav-btn:focus, #top-nav a:focus {
+  color: var(--primary);
+}
+
+.top-nav-btn:focus, #top-nav a:focus {
+  border: 2px solid var(--primary) !important;
+  border-radius: 10px;
+  padding: .5rem !important;
+  outline: none;
+}

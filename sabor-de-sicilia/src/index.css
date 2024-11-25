@@ -1,0 +1,17 @@
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap');
+
+/* Colors and fonts*/
+:root {
+  --primary: #0070BB;
+  --secondary: #ede8d0;
+  --light: #F0F8FF;
+  --dark: #002244;
+  --title: "Cinzel", serif;
+  --content: "Host Grotesk", sans-serif
+}
