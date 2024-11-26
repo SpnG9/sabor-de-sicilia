@@ -1,0 +1,22 @@
+.mobile-nav-btn {
+  font-family: var(--content);
+  background-color: var(--dark);
+  color: var(--light);
+  border-radius: 10px;
+  border: 2px solid var(--light);
+}
+
+.btn-opened {
+  background-color: var(--light);
+  border: 2px solid var(--dark);
+  border-radius: 10px 10px 0 0 ;
+  color: var(--dark);
+}
+
+.side-menu-mobile {
+  border: 2px solid var(--dark);
+  border-radius: 0 10px 10px 10px;
+  color: var(--dark);
+  background-color: var(--light);
+  font-family: var(--content);
+}

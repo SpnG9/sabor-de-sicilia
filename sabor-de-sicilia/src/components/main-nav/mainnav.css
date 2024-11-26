@@ -3,12 +3,17 @@
 }
 
 #logo-btn {
-  height: 18vh;
   transition: 0.2s all ease-in-out;
+  background-image: url("./../../assets/images/logo/default.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 8rem;
+  height: 8rem;
 }
 
 #logo-btn:hover {
-  content: url("./../../assets/images/logo/hover.png");
+  background-image: url("./../../assets/images/logo/hover.png");
 }
 
 /* Reservation Button */
@@ -21,6 +26,7 @@
   position: relative;
   transition: 0.2s all ease-in-out;
   overflow: hidden;
+  font-family: var(--content);
 }
 
 #reservation-btn::before {
@@ -42,18 +48,4 @@
 
 #reservation-btn:hover::before {
   width: 100%;
-}
-
-/* Focus for accessibility */
-#main-nav button:focus {
-  border-radius: 10px;
-  background-color: var(--secondary);
-  color: var(--dark);
-  border: 2px solid var(--dark);
-  outline: none;
-}
-
-#reservation-btn:focus {
-box-shadow: 0 0 0 5px var(--dark) !important;
-background-color: var(--light) !important;
 }

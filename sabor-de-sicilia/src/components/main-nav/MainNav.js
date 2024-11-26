@@ -1,13 +1,11 @@
 import React from "react";
-
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-
 import "./mainnav.css";
-import logo from "./../../assets/images/logo/default.png";
 
 // Components
 import MainNavBtn from "../buttons/main-nav-btn/MainNavBtn";
+import MobileSideMenu from "../mobile-side-menu/MobileSideMenu";
 
 const MainNav = () => {
   const { t } = useTranslation();
@@ -23,22 +21,22 @@ const MainNav = () => {
         id="main-nav-content"
         className="grid grid-cols-12 items-center md:max-w-80vw mx-auto p-2"
       >
-        {/* Desktop navigation */}
-        <div className="col-span-5 flex justify-between items-center">
+        <div className="col-span-4 hidden md:flex justify-between items-center">
           <MainNavBtn text={t("main-nav.contacts")} route="/contacts" />
           <MainNavBtn text={t("main-nav.location")} route="/location" />
           <MainNavBtn text={t("main-nav.menu")} route="/menu" />
         </div>
-        <div className="col-span-2 flex items-center justify-center mx-3">
-          <button role="button" route="/">
-            <img id="logo-btn" src={logo} />
-          </button>
+        <div className="md:hidden flex justify-start items-center col-span-4">
+          <MobileSideMenu/>
         </div>
-        <div className="col-span-5 flex justify-between items-center">
-          <MainNavBtn text={t("main-nav.history")} route="/contacts" />
+        <div className="col-span-4 flex items-center justify-center mx-3">
+          <button id="logo-btn" route="/"/>
+        </div>
+        <div className="col-span-4 flex md:justify-between justify-end items-center">
+          <MainNavBtn text={t("main-nav.events")} route="/events" />
           <MainNavBtn text={t("main-nav.jobs")} route="/location" />
           <button
-            className="text-xl font-bold p-2"
+            className="md:text-xl text-sm font-bold p-2"
             id="reservation-btn"
             onClick={() => redirectTo("/reservation")}
           >

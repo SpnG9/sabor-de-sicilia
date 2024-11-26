@@ -6,7 +6,7 @@ import "./topnavbtn.css"
 
 function IcoBtn({ icon }) {
   return (
-    <button type="button" role="button" className="top-nav-btn">
+    <button type="button" className="top-nav-btn">
       <FontAwesomeIcon icon={icon}/>
     </button>
   )
