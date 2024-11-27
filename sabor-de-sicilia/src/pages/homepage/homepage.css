@@ -1,0 +1,16 @@
+.presentation {
+  color: var(--dark);
+}
+
+.presentation h1, #prefoot h4 {
+  font-family: var(--title);
+}
+
+.presentation h4, #prefoot h6 {
+  font-family: var(--content);
+}
+
+#prefoot {
+  background-color: var(--dark);
+  color: var(--secondary);
+}

@@ -15,3 +15,7 @@
   --title: "Cinzel", serif;
   --content: "Host Grotesk", sans-serif
 }
+
+body {
+  background-color: var(--secondary);
+}

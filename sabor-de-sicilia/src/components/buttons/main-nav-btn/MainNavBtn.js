@@ -12,9 +12,8 @@ const MainNavBtn = ({ text, route }) => {
 
   return (
     <button
-      className="main-nav-btn text-xl font-bold p-2 md:flex hidden"
+      className="main-nav-btn text-base font-bold p-2 md:flex hidden"
       type="button"
-      role="button"
       onClick={() => redirectTo(route)}
     >
       <span className="left-border" />

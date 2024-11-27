@@ -29,14 +29,14 @@ const MainNav = () => {
         <div className="md:hidden flex justify-start items-center col-span-4">
           <MobileSideMenu/>
         </div>
-        <div className="col-span-4 flex items-center justify-center mx-3">
-          <button id="logo-btn" route="/"/>
+        <div className="col-span-4 flex items-center justify-center">
+          <button id="logo-btn" route="/homepage"/>
         </div>
         <div className="col-span-4 flex md:justify-between justify-end items-center">
           <MainNavBtn text={t("main-nav.events")} route="/events" />
           <MainNavBtn text={t("main-nav.jobs")} route="/location" />
           <button
-            className="md:text-xl text-sm font-bold p-2"
+            className="md:text-base text-sm font-bold p-2"
             id="reservation-btn"
             onClick={() => redirectTo("/reservation")}
           >

@@ -10,26 +10,42 @@
     "jobs": "Carreras",
     "resevation": "¡Reserva ahora!"
   },
-  "descriptions": {
+  "mobile-side-menu": {
+    "homepage": "Página principal",
+    "menu-accordion": {
+      "food": "Comidas",
+      "drinks": "Bebidas"
+    },
+    "jobs-accordion": {
+      "foh": "Frente",
+      "boh": "Cocina"
+    }
+  },
+  "pages": {
     "homepage": {
       "welcome-title": "Te damos la bienvenida a nuestro chiringuito, Sabor de Sicilia!",
       "welcome-content": "Donde Sicilia y España se encuentran en cada bocado.En nuestro chiringuito, la tradición siciliana se mezcla con los sabores vibrantes de España. Disfruta de un ambiente único junto al mar, ideal para compartir momentos inolvidables con quienes más quieres.",
       "journey-title": "Un viaje de sabores",
-      "journey-content": "Nuestro menú combina lo mejor de ambas culturas: tapas españolas, platos tradicionales sicilianos y creaciones únicas que fusionan estos dos mundos culinarios. Ya sea a la hora del almuerzo o en la cena, vivirás una experiencia gastronómica sin igual.Reserva tu mesa y descubre la magia de Sabor De Sicilia, donde los sabores de Sicilia y España se unen en perfecta armonía. ¡Te esperamos!"
-    },
-    "cards": {
-      "food": "Comidas",
-      "drinks": "Bebidas",
-      "restaurant": "El chiringuito"
-    },
-    "pre-foot": {
-      "info": "¿Quiere más información?",
-      "subscription": "Suscríbete ahora a nuestra newsletter. Recibirás información sobre nuestros nuevos platos, opotrunidades laborales y, además, un descuento del 10% sobre tu primera reserva. ¡No te lo pierdas!"
-    },
-    "input": {
-      "placeholders": {
-        "pre-foot-input": "Introducir correo electrónico ..."
+      "journey-content": "Nuestro menú combina lo mejor de ambas culturas: tapas españolas, platos tradicionales sicilianos y creaciones únicas que fusionan estos dos mundos culinarios. Ya sea a la hora del almuerzo o en la cena, vivirás una experiencia gastronómica sin igual.Reserva tu mesa y descubre la magia de Sabor De Sicilia, donde los sabores de Sicilia y España se unen en perfecta armonía. ¡Te esperamos!",
+      "cards": {
+        "food": "Comidas",
+        "drinks": "Bebidas",
+        "restaurant": "El chiringuito"
+      },
+      "prefoot": {
+        "info": "¿Quiere más información?",
+        "subscription": "Suscríbete ahora a nuestra newsletter. Recibirás información sobre nuestros nuevos platos, opotrunidades laborales y, además, un descuento del 10% sobre tu primera reserva. ¡No te lo pierdas!"
+      },
+      "input": {
+        "placeholders": {
+          "pre-foot-input": "Introducir correo electrónico ..."
+        }
       }
+    }
+  },
+  "alt": {
+    "homepage": {
+      "img": "Trés hombres y una mujer que cocinan"
     }
   }
 }
