@@ -16,10 +16,10 @@ const MainNav = () => {
   };
 
   return (
-    <nav id="main-nav">
+    <nav id="main-nav" className="p-2 md:p-0">
       <div
         id="main-nav-content"
-        className="grid grid-cols-12 items-center md:max-w-80vw mx-auto p-2"
+        className="grid grid-cols-12 items-center md:max-w-80vw mx-auto"
       >
         <div className="col-span-4 hidden md:flex justify-between items-center">
           <MainNavBtn text={t("main-nav.contacts")} route="/contacts" />
@@ -30,17 +30,17 @@ const MainNav = () => {
           <MobileSideMenu/>
         </div>
         <div className="col-span-4 flex items-center justify-center">
-          <button id="logo-btn" route="/homepage"/>
+          <button id="logo-btn" onClick={() => redirectTo("/homepage")}/>
         </div>
         <div className="col-span-4 flex md:justify-between justify-end items-center">
           <MainNavBtn text={t("main-nav.events")} route="/events" />
           <MainNavBtn text={t("main-nav.jobs")} route="/location" />
           <button
-            className="md:text-base text-sm font-bold p-2"
+            className="md:text-xl text-sm font-bold p-2"
             id="reservation-btn"
             onClick={() => redirectTo("/reservation")}
           >
-            {t("main-nav.resevation")}
+            {t("main-nav.reservation")}
           </button>
         </div>
       </div>

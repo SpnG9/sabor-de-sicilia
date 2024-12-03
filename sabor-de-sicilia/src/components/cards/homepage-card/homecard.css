@@ -1,0 +1,71 @@
+#card-food {
+  background-image: url("./../../../assets/images/homepage/cards/card-food.jpg");
+}
+
+#card-drinks {
+  background-image: url("./../../../assets/images/homepage/cards/card-drinks.jpg");
+}
+
+#card-location {
+  background-image: url("./../../../assets/images/homepage/cards/card-location.jpg");
+}
+
+.homepage-card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  width: 15rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px 2px #333;
+  position: relative;
+  transition: filter 0.3s ease;
+}
+
+.homepage-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.homepage-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+.homepage-card span {
+  text-transform: uppercase;
+  color: #F2F3F4;
+  font-weight: bold;
+  font-family: var(--content);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 25px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.homepage-card:hover {
+  filter: brightness(1.2);
+}
+
+.homepage-card:hover::before {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.homepage-card:hover span {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .homepage-card span {
+    opacity: 1;
+  }
+}

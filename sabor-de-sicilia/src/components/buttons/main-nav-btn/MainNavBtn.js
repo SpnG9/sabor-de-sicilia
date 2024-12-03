@@ -12,14 +12,10 @@ const MainNavBtn = ({ text, route }) => {
 
   return (
     <button
-      className="main-nav-btn text-base font-bold p-2 md:flex hidden"
+      className="main-nav-btn text-xl font-bold p-2 md:flex hidden"
       type="button"
       onClick={() => redirectTo(route)}
     >
-      <span className="left-border" />
-      <span className="right-border" />
-      <span className="top-border-left" />
-      <span className="top-border-right" />
       {text}
     </button>
   );

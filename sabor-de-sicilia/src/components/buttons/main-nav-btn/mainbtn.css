@@ -1,93 +1,24 @@
 .main-nav-btn {
   position: relative;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-  background: transparent;
   border: none;
-  cursor: pointer;
   color: var(--light);
-  transition: color 0.2s ease;
-  font-family: var(--content);
+}
+
+.main-nav-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary); /* Adjust color as needed */
+  transition: width 0.3s ease;
+}
+
+.main-nav-btn:hover::after {
+  width: 100%;
 }
 
 .main-nav-btn:hover {
   color: var(--secondary);
-}
-
-.main-nav-btn::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 5%;
-  width: 2px;
-  height: 2px;
-  background-color: var(--primary);
-  transition: width 0.2s ease, background-color 0.2s ease;
-}
-
-.main-nav-btn .left-border {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 2px;
-  height: 0;
-  background-color: var(--light);
-  transition: height 0.2s ease, background-color 0.2s ease;
-  transition-delay: 0.2s;
-}
-
-.main-nav-btn .right-border {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 2px;
-  height: 0;
-  background-color: var(--light);
-  transition: height 0.2s ease, background-color 0.2s ease;
-  transition-delay: 0.2s;
-}
-
-.main-nav-btn .top-border-left {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--light);
-  transition: width 0.2s ease, background-color 0.2s ease;
-  transition-delay: 0.6s;
-}
-
-.main-nav-btn .top-border-right {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--light);
-  transition: width 0.2s ease, background-color 0.2s ease;
-  transition-delay: 0.6s;
-}
-
-.main-nav-btn:hover::before {
-  width: 100%;
-  background-color: var(--secondary);
-}
-
-.main-nav-btn:hover .left-border,
-.main-nav-btn:hover .right-border {
-  height: 100%;
-  background-color: var(--secondary);
-}
-
-.main-nav-btn:hover .top-border-left,
-.main-nav-btn:hover .top-border-right {
-  width: 50%;
-  background-color: var(--secondary);
 }

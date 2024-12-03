@@ -1,0 +1,47 @@
+.prefoot-input {
+  font-family: var(--content);
+}
+
+.prefoot-input label {
+  color: var(--secondary);
+}
+
+.prefoot-input input {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom-color: var(--secondary);
+  transition: .2s all ease-in-out;
+}
+
+.prefoot-input input::placeholder {
+  color: var(--secondary);
+}
+
+.prefoot-input input:hover {
+  cursor: pointer;
+}
+
+.prefoot-input input:focus, .prefoot-input input.valid {
+  outline: none;
+  border-radius: 10px 0 0 10px;
+  border-color: var(--secondary);
+}
+
+.prefoot-input button {
+  background-color: var(--secondary);
+  color: var(--dark);
+  border-radius: 0 10px 10px 0;
+  font-weight: bold;
+  transition: .2s all ease-in-out;
+  border: 1px solid transparent;
+}
+
+.prefoot-input button:not(:disabled):hover {
+  background-color: transparent;
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.prefoot-input .confirmation-msg {
+  color: var(--secondary);
+}

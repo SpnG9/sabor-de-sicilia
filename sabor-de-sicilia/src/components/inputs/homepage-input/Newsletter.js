@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+
+import "./newsletter.css"
 
 const Newsletter = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [isValid, setIsValid] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
+
+  const { t } = useTranslation();
 
   const handleEmailChange = (e) => {
     const emailValue = e.target.value;
@@ -25,37 +30,34 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
-      <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-md">
+    <div className="prefoot-input mt-10 md:m-0 flex justify-center items-center">
+      <form onSubmit={handleSubmit} className="w-full max-w-md">
         <div className="mb-4">
-          <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
-            Introducir correo electrónico
+          <label className="block text-sm font-bold mb-2" htmlFor="email">
+            {t("input.prefoot.label")}
           </label>
-          <input
-            className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-              isValid ? 'border-green-500' : 'border-red-500'
-            }`}
-            id="email"
-            type="email"
-            placeholder="example@example.com"
-            value={email}
-            onChange={handleEmailChange}
-          />
-        </div>
-        <div className="flex items-center justify-between">
-          <button
-            className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${
-              isValid ? 'opacity-100' : 'opacity-50 cursor-not-allowed'
-            }`}
-            type="submit"
-            disabled={!isValid}
-          >
-            Enviar
-          </button>
+          <div className="flex">
+            <input
+              className={`shadow appearance-none border w-full py-2 px-3 leading-tight ${isValid ? 'valid' : ''}`}
+              id="email"
+              type="email"
+              placeholder={t("input.prefoot.placeholder")}
+              value={email}
+              onChange={handleEmailChange}
+            />
+            <button
+              className={`py-2 px-3 ${isValid ? "opacity-100" : "opacity-50 cursor-not-allowed"}`
+              }
+              type="submit"
+              disabled={!isValid}
+            >
+              {t("input.prefoot.button")}
+            </button>
+          </div>
         </div>
         {showMessage && (
-          <div className="mt-4 text-green-500 font-bold">
-            ¡Gracias! Se enviará un correo de confirmación en breve.
+          <div className="mt-4 font-medium italic confirmation-msg">
+            {t("input.prefoot.confirmation")}
           </div>
         )}
       </form>

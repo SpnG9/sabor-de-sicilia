@@ -1,0 +1,35 @@
+#footer {
+  background-color: var(--primary);
+  font-family: var(--content);
+  color: var(--secondary);
+}
+
+#footer-logo-btn {
+  background-image: url("./../../assets/images/logo/hover.png");
+  background-position: center;
+  background-size: cover;
+  height: 12rem;
+  width: 12rem;
+  transition: .2s all ease-in-out;
+}
+
+#footer-logo-btn:hover {
+  background-image: url("./../../assets/images/logo/default.png");
+}
+
+#footer-content span {
+  cursor: pointer;
+  transition: .2s all ease-in-out;
+}
+
+#footer-content span:hover {
+  color: var(--light);
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  #footer-logo-btn {
+    width: 8rem;
+    height: 8rem;
+  }
+}
