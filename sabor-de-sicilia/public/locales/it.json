@@ -1,0 +1,49 @@
+{
+  "top-nav": {
+    "reservation": "Prenotazioni:"
+  },
+  "main-nav": {
+    "contacts": "Contatti",
+    "location": "Il chiringuito",
+    "menu": "Menu",
+    "events": "Eventi",
+    "jobs": "Canditature",
+    "reservation": "Prenota adesso!"
+  },
+  "mobile-side-menu": {
+    "homepage": "Homepage",
+    "menu-accordion": {
+      "food": "Cibo",
+      "drinks": "Bevande"
+    },
+    "jobs-accordion": {
+      "foh": "Sala",
+      "boh": "Cucina"
+    }
+  },
+  "pages": {
+    "homepage": {
+      "welcome-title": "Ti diamo il benvenuto al nostro chiringuito, Sabor de Sicilia!",
+      "welcome-content": "Qui, Spagna e Sicilia si incontrano nel gusto. Nel nostro chiringuito, la tradizione siciliana e i sapori della Spagna si mescolano dando vita a un'esperienza culinaria unica.",
+      "journey-title": "Un viaggio di sapori",
+      "journey-content": "Il nostro menu unisce il meglio di entrambe le culture: tapas, piatti tradizioni siciliani e creazioni uniche che fanno una fusione tra le due culture. Non importa se verrai per pranzo o per cena, vivrai un'esperienza culinarai senza eguali. Prenota ora e scopri la nostra magia, dove i sapori siciliani e spagnoli formano un'armonia speciale. Ti aspettiamo!",
+      "prefoot": {
+        "info": "Vuoi più informazioni?",
+        "subscription": "Sottoscriviti ora alla nostra newsletter. Riceverai informazioni riguardanti le new-entry nel nostro menu, opportunità lavorative e inoltre, uno sconto del 10% sulla tua prima prenotazione!"
+      }
+    }
+  },
+  "input": {
+    "prefoot" : {
+      "label": "Inserisci un indirizzo email",
+      "placeholder": "esempio@email.it",
+      "button": "Invia",
+      "confirmation": "Grazie! A breve ti arriverà un'email di conferma."
+    }
+  },
+  "alt": {
+    "homepage": {
+      "img": "Il personale della cucina"
+    }
+  }
+}
