@@ -19,3 +19,27 @@
 body {
   background-color: var(--secondary);
 }
+
+/* Animations */
+.hidden-state {
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.from-left {
+  transform: translateX(-50px);
+}
+
+.from-right {
+  transform: translateX(50px);
+}
+
+.from-bottom {
+  transform: translateY(50px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}

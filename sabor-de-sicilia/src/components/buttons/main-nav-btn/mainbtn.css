@@ -2,6 +2,7 @@
   position: relative;
   border: none;
   color: var(--light);
+  transition: font-size 0.3s ease,;
 }
 
 .main-nav-btn::after {
@@ -11,7 +12,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--secondary); /* Adjust color as needed */
+  background-color: var(--secondary);
   transition: width 0.3s ease;
 }
 

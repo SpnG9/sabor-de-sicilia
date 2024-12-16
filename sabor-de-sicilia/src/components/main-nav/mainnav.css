@@ -1,10 +1,16 @@
+/* Main Navbar */
 #main-nav {
   background-color: var(--primary);
+  position: sticky;
+  top: 0;
+  z-index: 9999999;
+  transition: padding 0.3s ease-in-out, font-size 0.3s ease-in-out;
 }
 
+/* Logo Button */
 #logo-btn {
-  transition: 0.2s all ease-in-out;
-  background-image: url("./../../assets/images/logo/default.png");
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, background-image 0.3s ease-in-out;
+  background-image: url("../../assets/images/logo/default.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,8 +18,13 @@
   height: 7rem;
 }
 
+#logo-btn.logo-shrink {
+  width: 5rem;
+  height: 5rem;
+}
+
 #logo-btn:hover {
-  background-image: url("./../../assets/images/logo/hover.png");
+  background-image: url("../../assets/images/logo/hover.png");
 }
 
 /* Reservation Button */
@@ -24,9 +35,13 @@
   z-index: 1;
   background: var(--secondary);
   position: relative;
-  transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out, font-size 0.3s ease-in-out;
   overflow: hidden;
   font-family: var(--content);
+}
+
+#reservation-btn.shrink {
+  font-size: 0.5rem;
 }
 
 #reservation-btn::before {

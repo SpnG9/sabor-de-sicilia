@@ -4,6 +4,9 @@ import { useTranslation } from "react-i18next";
 
 import "./homecard.css";
 
+// Hooks
+import useScrollAnimations from "../../../hooks/useScrollAnimations";
+
 const HomeCards = () => {
   const navigate = useNavigate();
   const redirectTo = (route) => {
@@ -11,9 +14,10 @@ const HomeCards = () => {
   };
 
   const { t } = useTranslation();
+  useScrollAnimations();
 
   return (
-    <div className="flex flex-col items-center md:flex-row justify-between w-[70vw] mt-4 mx-auto">
+    <div className="hidden-state from-bottom flex flex-col items-center md:flex-row justify-between w-[70vw] mt-4 mx-auto">
       <button
         id="card-food"
         className="homepage-card"

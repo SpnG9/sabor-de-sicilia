@@ -14,7 +14,7 @@
 }
 
 .prefoot-input input::placeholder {
-  color: var(--secondary);
+  color: #77858a;
 }
 
 .prefoot-input input:hover {

@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import useScroll from "../../hooks/useScroll";
 
 import "./menu.css";
+
+
 
 // Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,6 +37,8 @@ const MobileSideMenu = () => {
     navigate(route);
   };
 
+  const isScrolled = useScroll(50);
+
   return (
     <div className="relative w-full">
       <button
@@ -43,9 +48,9 @@ const MobileSideMenu = () => {
             ? t("aria-labels.mobile-side-menu.opened")
             : t("aria-labels.mobile-side-menu.closed")
         }
-        className={`text-sm p-2 font-bold mobile-nav-btn ${
+        className={`p-2 font-bold mobile-nav-btn ${
           isDropdownOpen ? "btn-opened" : ""
-        }`}
+        } ${isScrolled ? "text-xs" : "text-sm"}`}
       >
         <span className="flex items-center">
           Menu
