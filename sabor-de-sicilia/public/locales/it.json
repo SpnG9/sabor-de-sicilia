@@ -31,19 +31,37 @@
         "info": "Vuoi più informazioni?",
         "subscription": "Sottoscriviti ora alla nostra newsletter. Riceverai informazioni riguardanti le new-entry nel nostro menu, opportunità lavorative e inoltre, uno sconto del 10% sulla tua prima prenotazione!"
       }
-    }
+    },
+    "wip": "Ci dispiace, questa pagina non è ancora pronta. Stiamo lavorando duramente per offrirti la migliore esperienza il prima possibile. Nel frattempo, esplora gli altri contenuti del nostro sito web. Grazie per la tua pazienza e comprensione!"
   },
   "input": {
-    "prefoot" : {
+    "prefoot": {
       "label": "Inserisci un indirizzo email",
       "placeholder": "esempio@email.it",
       "button": "Invia",
+      "error": "Per favore, inserisci un indirizzo email valido (esempio@email.it)",
+      "submitted": "Sottoscritto/a!",
       "confirmation": "Grazie! A breve ti arriverà un'email di conferma."
     }
   },
   "alt": {
     "homepage": {
       "img": "Il personale della cucina"
+    }
+  },
+  "aria-labels": {
+    "homepage": {
+      "food-home-card": "Vai al menu delle portate",
+      "drinks-home-card": "Vai al menu delle bevande",
+      "location-home-card": "Vai alla pagina di presentazione del chiringuito"
+    },
+    "mobile-side-menu": {
+      "menu-accordion": "Menu delle portate e delle bevande",
+      "jobs-accordion": "Opportunità lavorative"
+    },
+    "prefoot-form": {
+      "form-description": "Form sottoscrizione alla newsletter",
+      "submit-button": "Sottoscriviti alla newsletter"
     }
   }
 }

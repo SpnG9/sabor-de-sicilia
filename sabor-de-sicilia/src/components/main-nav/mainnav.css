@@ -9,13 +9,15 @@
 
 /* Logo Button */
 #logo-btn {
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, background-image 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, background-image 0.3s ease-in-out, all 0.2s ease-in-out;
   background-image: url("../../assets/images/logo/default.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 7rem;
   height: 7rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
 }
 
 #logo-btn.logo-shrink {
@@ -23,8 +25,14 @@
   height: 5rem;
 }
 
-#logo-btn:hover {
+#logo-btn:hover, #logo-btn:focus {
   background-image: url("../../assets/images/logo/hover.png");
+}
+
+#logo-btn:focus-visible {
+  border: 2px solid var(--secondary);
+  outline: none;
+  margin: .5rem;
 }
 
 /* Reservation Button */
@@ -35,13 +43,9 @@
   z-index: 1;
   background: var(--secondary);
   position: relative;
-  transition: 0.2s all ease-in-out, font-size 0.3s ease-in-out;
+  transition: 0.3s all ease-in-out, font-size 0.3s ease-in-out;
   overflow: hidden;
   font-family: var(--content);
-}
-
-#reservation-btn.shrink {
-  font-size: 0.5rem;
 }
 
 #reservation-btn::before {
@@ -63,4 +67,11 @@
 
 #reservation-btn:hover::before {
   width: 100%;
+}
+
+#reservation-btn:focus-visible {
+  color: var(--secondary);
+  border-color: var(--secondary);
+  background-color: var(--dark);
+  outline: none;
 }

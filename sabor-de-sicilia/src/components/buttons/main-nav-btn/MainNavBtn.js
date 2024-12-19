@@ -5,20 +5,17 @@ import "./mainbtn.css";
 
 const MainNavBtn = ({ text, route }) => {
   const navigate = useNavigate();
-  const redirectTo = (route) => {
-    navigate(route);
-  };
 
   // Use the custom hook
   const isScrolled = useScroll(50);
 
   return (
     <button
-      className={`main-nav-btn text-xl font-bold p-2 md:flex hidden ${
-        isScrolled ? "text-base" : ""
+      className={`main-nav-btn font-bold p-2 md:flex hidden justify-center ${
+        isScrolled ? "text-lg" : "text-xl"
       }`}
-      type="button"
-      onClick={() => redirectTo(route)}
+      type="button"       
+      onClick={() => navigate(route)}
     >
       {text}
     </button>

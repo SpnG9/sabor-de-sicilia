@@ -31,19 +31,37 @@
         "info": "¿Quieres más información?",
         "subscription": "Suscríbete ahora a nuestra newsletter. Recibirás información sobre nuestros nuevos platos, oportunidades laborales y, además, un descuento del 10% sobre tu primera reserva. ¡No te lo pierdas!"
       }
-    }
+    },
+    "wip": "Lo sentimos, esta página aún no está terminada. Estamos trabajando arduamente para ofrecerte la mejor experiencia lo más pronto posible. Mientras tanto, no dudes en explorar otros contenidos en nuestro sitio web. ¡Gracias por tu paciencia y comprensión!"
   },
   "input": {
-    "prefoot" : {
+    "prefoot": {
       "label": "Introducir correo electrónico",
       "placeholder": "ejemplo@correo.es",
       "button": "Enviar",
+      "error": "Por favor introduces un correo electrónico válido (ejemplo@correo.es)",
+      "submitted": "¡Suscrito/a!",
       "confirmation": "¡Gracias! Se enviará un correo de confirmación en breve."
     }
   },
   "alt": {
     "homepage": {
       "img": "Trés hombres y una mujer que cocinan"
+    }
+  },
+  "aria-labels": {
+    "homepage": {
+      "food-home-card": "Vaya al menú de las comidas",
+      "drinks-home-card": "Vaya al menú de las bebidas",
+      "location-home-card": "Vaya a la página de la presentación del chiringuito"
+    },
+    "mobile-side-menu": {
+      "menu-accordion": "Menu de las comidas y bebidas",
+      "jobs-accordion": "Carreras"
+    },
+    "prefoot-form": {
+      "form-description": "Formulario de la suscripción a la newsletter",
+      "submit-button": "Suscríbete a la newsletter"
     }
   }
 }

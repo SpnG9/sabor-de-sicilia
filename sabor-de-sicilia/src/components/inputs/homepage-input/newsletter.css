@@ -10,7 +10,7 @@
   background-color: transparent;
   border: 1px solid transparent;
   border-bottom-color: var(--secondary);
-  transition: .2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .prefoot-input input::placeholder {
@@ -19,21 +19,25 @@
 
 .prefoot-input input:hover {
   cursor: pointer;
+  border-color: var(--secondary);
+  border-radius: 10px 0 0 10px;
 }
 
-.prefoot-input input:focus, .prefoot-input input.valid {
+.prefoot-input input:focus,
+.prefoot-input input.valid {
   outline: none;
   border-radius: 10px 0 0 10px;
-  border-color: var(--secondary);
+  background-color: var(--secondary);
+  color: var(--dark);
 }
 
 .prefoot-input button {
-  background-color: var(--secondary);
-  color: var(--dark);
+  background-color: var(--dark);
+  color: var(--secondary);
   border-radius: 0 10px 10px 0;
   font-weight: bold;
-  transition: .2s all ease-in-out;
-  border: 1px solid transparent;
+  transition: 0.2s all ease-in-out;
+  border: 1px solid var(--secondary);
 }
 
 .prefoot-input button:not(:disabled):hover {
@@ -42,6 +46,8 @@
   border-color: var(--secondary);
 }
 
-.prefoot-input .confirmation-msg {
+.confirmation-msg {
   color: var(--secondary);
+  transform-origin: top;
+  animation: slideDown 0.3s ease-in-out;
 }

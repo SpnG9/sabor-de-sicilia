@@ -9,44 +9,52 @@ import useScrollAnimations from "../../../hooks/useScrollAnimations";
 
 const HomeCards = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+  useScrollAnimations();
+
   const redirectTo = (route) => {
     navigate(route);
   };
 
-  const { t } = useTranslation();
-  useScrollAnimations();
+  const cardData = [
+    {
+      id: "card-food",
+      route: "/menu/food",
+      label: t("mobile-side-menu.menu-accordion.food"),
+      ariaLabel: t("aria-labels.homepage.food-home-card"),
+    },
+    {
+      id: "card-drinks",
+      route: "/menu/drinks",
+      label: t("mobile-side-menu.menu-accordion.drinks"),
+      ariaLabel: t("aria-labels.homepage.drinks-home-card"),
+    },
+    {
+      id: "card-location",
+      route: "/location",
+      label: t("main-nav.location"),
+      ariaLabel: t("aria-labels.homepage.location-home-card"),
+    },
+  ];
 
   return (
-    <div className="hidden-state from-bottom flex flex-col items-center md:flex-row justify-between w-[70vw] mt-4 mx-auto">
-      <button
-        id="card-food"
-        className="homepage-card"
-        type="button"
-        onClick={() => redirectTo("/menu/food")}
-      >
-        <span>
-          {t("mobile-side-menu.menu-accordion.food")}
-        </span>
-      </button>
-      <button
-        id="card-drinks"
-        className="homepage-card my-5"
-        type="button"
-        onClick={() => redirectTo("/menu/drinks")}
-      >
-        <span>
-          {t("mobile-side-menu.menu-accordion.drinks")}
-        </span>
-      </button>
-      <button
-        id="card-location"
-        className="homepage-card"
-        type="button"
-        onClick={() => redirectTo("/location")}
-      >
-        <span>{t("main-nav.location")}</span>
-      </button>
-    </div>
+    <nav
+      aria-label="Quick Navigation"
+      className="hidden-state from-bottom flex flex-col items-center md:flex-row justify-between w-[70vw] mx-auto"
+    >
+      {cardData.map((card) => (
+        <button
+          key={card.id}
+          id={card.id}
+          className="homepage-card"
+          type="button"
+          onClick={() => redirectTo(card.route)}
+          aria-label={card.ariaLabel}
+        >
+          <span>{card.label}</span>
+        </button>
+      ))}
+    </nav>
   );
 };
 
