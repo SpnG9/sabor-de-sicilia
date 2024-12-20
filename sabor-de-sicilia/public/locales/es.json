@@ -32,7 +32,10 @@
         "subscription": "Suscríbete ahora a nuestra newsletter. Recibirás información sobre nuestros nuevos platos, oportunidades laborales y, además, un descuento del 10% sobre tu primera reserva. ¡No te lo pierdas!"
       }
     },
-    "wip": "Lo sentimos, esta página aún no está terminada. Estamos trabajando arduamente para ofrecerte la mejor experiencia lo más pronto posible. Mientras tanto, no dudes en explorar otros contenidos en nuestro sitio web. ¡Gracias por tu paciencia y comprensión!"
+    "wip": {
+      "message": "Lo sentimos, esta página aún no está terminada. Estamos trabajando arduamente para ofrecerte la mejor experiencia lo más pronto posible. Mientras tanto, no dudes en explorar otros contenidos en nuestro sitio web. ¡Gracias por tu paciencia y comprensión!",
+      "go-back": "Volver a la página principal"
+    }
   },
   "input": {
     "prefoot": {

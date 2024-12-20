@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import "./footer.css";
 
@@ -12,8 +12,15 @@ const Footer = () => {
     navigate(route);
   };
 
+  const location = useLocation();
+  const isWipRoute = location.pathname === "/wip";
+
   return (
-    <footer id="footer" className="p-3" role="contentinfo">
+    <footer
+      id="footer"
+      className={`p-3 ${isWipRoute ? "hidden" : ""}`}
+      role="contentinfo"
+    >
       <div
         id="footer-content"
         className="grid grid-cols-12 items-center md:max-w-80vw mx-auto"
@@ -24,7 +31,7 @@ const Footer = () => {
             {["Tik Tok", "Facebook", "Instagram"].map((platform, index) => (
               <li key={index}>
                 <button
-                  className="my-1 md:text-xl text-sm font-semibold hover:font-extrabold"
+                  className="footer-btn my-1 md:text-xl text-sm font-semibold hover:font-extrabold"
                   onClick={() => redirectTo("/wip")}
                   aria-label={`${platform} link`}
                 >
@@ -34,7 +41,7 @@ const Footer = () => {
             ))}
             <li>
               <button
-                className="my-1 md:text-xl text-sm font-semibold hover:font-extrabold"
+                className="footer-btn my-1 md:text-xl text-sm font-semibold hover:font-extrabold"
                 onClick={() => redirectTo("/wip")}
                 aria-label={t("main-nav.contacts")}
               >
@@ -60,7 +67,7 @@ const Footer = () => {
             {["menu", "jobs", "location", "reservation"].map((key, index) => (
               <li key={index}>
                 <button
-                  className="my-1 md:text-xl text-sm font-semibold hover:font-extrabold"
+                  className="footer-btn my-1 md:text-xl text-sm font-semibold hover:font-extrabold"
                   onClick={() => redirectTo("/wip")}
                   aria-label={t(`main-nav.${key}`)}
                 >

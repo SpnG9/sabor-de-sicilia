@@ -4,16 +4,18 @@
   color: var(--secondary);
 }
 
-#footer-content button {
+.footer-btn {
   cursor: pointer;
   transition: 0.2s all ease-in-out;
+  border: 2px solid transparent;
+  border-radius: 10px;
 }
 
-#footer-content button:hover {
+.footer-btn:hover {
   color: var(--light);
   padding: 0 1rem;
 }
-#footer-content button:focus-visible {
+.footer-btn:focus-visible, #footer-logo-btn:focus-visible {
   outline: none;
   border: 2px solid var(--light);
   color: var(--light);
@@ -22,17 +24,19 @@
 }
 
 #footer-logo-btn {
-  background-image: url("./../../assets/images/logo/hover.png");
+  background-image: url("./../../assets/images/logo/secondary.png");
   background-position: center;
   background-size: cover;
   height: 12rem;
   width: 12rem;
   transition: 0.2s all ease-in-out;
+  border: 2px solid transparent;
+  border-radius: 10px;
 }
 
 #footer-logo-btn:hover,
 #footer-logo-btn:focus-visible {
-  background-image: url("./../../assets/images/logo/default.png");
+  background-image: url("./../../assets/images/logo/primary.png");
 }
 
 @media screen and (max-width: 768px) {

@@ -2,15 +2,38 @@
   color: var(--dark);
 }
 
-.presentation h1, #prefoot h4 {
+.presentation h2, #prefoot h4 {
   font-family: var(--title);
 }
 
-.presentation h4, #prefoot h6 {
+.presentation p, #prefoot h6 {
   font-family: var(--content);
 }
 
 #prefoot {
   background-color: var(--dark);
   color: var(--secondary);
+}
+
+.hidden-state {
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.from-left {
+  transform: translateX(-50px);
+}
+
+.from-right {
+  transform: translateX(50px);
+}
+
+.from-bottom {
+  transform: translateY(50px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
 }

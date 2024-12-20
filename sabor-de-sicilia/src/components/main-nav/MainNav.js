@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./mainnav.css";
 import MainNavBtn from "../buttons/main-nav-btn/MainNavBtn";
 import MobileSideMenu from "../mobile-side-menu/MobileSideMenu";
@@ -14,6 +14,9 @@ const MainNav = () => {
   const redirectTo = (route) => {
     navigate(route);
   };
+
+  const location = useLocation();
+  const isWipRoute = location.pathname === "/wip";
 
   return (
     <nav
@@ -53,7 +56,7 @@ const MainNav = () => {
           <button
             id="logo-btn"
             onClick={() => redirectTo("/homepage")}
-            className={`logo-btn ${isScrolled ? "logo-shrink" : ""}`}
+            className={`logo-btn ${(isScrolled || isWipRoute) ? "logo-shrink" : ""}`}
             aria-label={t("main-nav.home")}
           />
         </div>
@@ -71,7 +74,7 @@ const MainNav = () => {
           <MainNavBtn text={t("main-nav.jobs")} route="/wip" role="menuitem" />
           <button
             className={`font-bold p-2 ${
-              isScrolled ? "md:text-lg text-xs" : "md:text-xl text-sm"
+              (isScrolled || isWipRoute) ? "md:text-lg text-xs" : "md:text-xl text-sm"
             }`}
             id="reservation-btn"
             onClick={() => redirectTo("/wip")}

@@ -51,7 +51,7 @@ const HomeCards = () => {
           onClick={() => redirectTo(card.route)}
           aria-label={card.ariaLabel}
         >
-          <span>{card.label}</span>
+          <span className="tracking-wide">{card.label}</span>
         </button>
       ))}
     </nav>

@@ -32,7 +32,10 @@
         "subscription": "Subscribe now to our newsletter. You will receive information about new additions to our menu, career opportunities and an a 10% discount to your first reservation!"
       }
     },
-    "wip": "We're sorry, this page is not finished yet. We are working hard to bring you the best experience as soon as possible. In the meantime, feel free to explore other content on our website. Thank you for your patience and understanding!"
+    "wip": {
+      "message": "We're sorry, this page is not finished yet. We are working hard to bring you the best experience as soon as possible. In the meantime, feel free to explore other content on our website. Thank you for your patience and understanding!",
+      "go-back": "Return to homepage"
+    }
   },
   "input": {
     "prefoot": {

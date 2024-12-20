@@ -3,17 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap");
 
 /* Colors and fonts*/
 :root {
-  --primary: #0070BB;
+  --primary: #0070bb;
   --secondary: #ede8d0;
-  --light: #F0F8FF;
+  --light: #f0f8ff;
   --dark: #002244;
   --title: "Cinzel", serif;
-  --content: "Host Grotesk", sans-serif
+  --content: "Host Grotesk", sans-serif;
 }
 
 body {
@@ -21,29 +21,6 @@ body {
 }
 
 /* Animations */
-.hidden-state {
-  opacity: 0;
-  transform: translateX(0);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.from-left {
-  transform: translateX(-50px);
-}
-
-.from-right {
-  transform: translateX(50px);
-}
-
-.from-bottom {
-  transform: translateY(50px);
-}
-
-.show {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -52,5 +29,55 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(100rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-from-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes arrow-move {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-0.5rem);
+  }
+}
+
+@keyframes scroll {
+  to {
+    left: -1ch;
   }
 }

@@ -1,9 +1,19 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
 import "./wip.css";
 
 function Wip() {
   const { t } = useTranslation();
+
+  const navigate = useNavigate();
+  const redirectTo = (route) => {
+    navigate(route);
+  };
+
   return (
     <>
       <div class="wrapper">
@@ -26,7 +36,23 @@ function Wip() {
           <span class="letter letter16">S</span>
         </div>
       </div>
-      <h1 className="wip">{t("pages.wip")}</h1>
+      <div className="wip w-[90vw] mx-auto my-10 slideup">
+        <p className="text-4xl font-bold">{t("pages.wip.message")}</p>
+      </div>
+      <div className="w-[80vw] flex flex-row-reverse mx-auto">
+        <button
+          onClick={() => redirectTo("/homepage")}
+          aria-label={t("main-nav.home")}
+          className="text-xl wip-btn p-4 font-semibold slide-in-right"
+        >
+          <div className="flex items-center justify-between">
+            <span className="me-4 arrow">
+              <FontAwesomeIcon icon={faArrowLeft} />
+            </span>
+            <span>{t("pages.wip.go-back")}</span>
+          </div>
+        </button>
+      </div>
     </>
   );
 }
