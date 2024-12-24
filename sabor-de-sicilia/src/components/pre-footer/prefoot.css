@@ -1,0 +1,13 @@
+#prefoot {
+  background-color: var(--dark);
+  color: var(--secondary);
+  padding: 3rem !important;
+}
+
+#prefoot h4 {
+  font-family: var(--title);
+}
+
+#prefoot h6 {
+  font-family: var(--content);
+}

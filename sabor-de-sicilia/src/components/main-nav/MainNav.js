@@ -30,7 +30,7 @@ const MainNav = () => {
       >
         {/* Desktop Navigation */}
         <div
-          className="col-span-4 hidden md:flex justify-between items-center"
+          className="col-span-4 hidden md:flex justify-between items-center desktop-nav"
           role="menu"
         >
           <MainNavBtn
@@ -47,7 +47,7 @@ const MainNav = () => {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <div className="md:hidden flex justify-start items-center col-span-4">
+        <div className="md:hidden flex justify-start items-center col-span-4 mobile-nav">
           <MobileSideMenu />
         </div>
 
@@ -56,14 +56,16 @@ const MainNav = () => {
           <button
             id="logo-btn"
             onClick={() => redirectTo("/homepage")}
-            className={`logo-btn ${(isScrolled || isWipRoute) ? "logo-shrink" : ""}`}
-            aria-label={t("main-nav.home")}
+            className={`logo-btn ${
+              isScrolled || isWipRoute ? "logo-shrink" : ""
+            }`}
+            aria-label={t("aria-labels.home-btn")}
           />
         </div>
 
         {/* Right Side Navigation */}
         <div
-          className="col-span-4 flex md:justify-between justify-end items-center"
+          className="col-span-4 flex md:justify-between justify-end items-center right-nav"
           role="menu"
         >
           <MainNavBtn
@@ -74,7 +76,9 @@ const MainNav = () => {
           <MainNavBtn text={t("main-nav.jobs")} route="/wip" role="menuitem" />
           <button
             className={`font-bold p-2 ${
-              (isScrolled || isWipRoute) ? "md:text-lg text-xs" : "md:text-xl text-sm"
+              isScrolled || isWipRoute
+                ? "md:text-lg text-xs"
+                : "md:text-xl text-sm"
             }`}
             id="reservation-btn"
             onClick={() => redirectTo("/wip")}

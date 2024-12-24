@@ -15,7 +15,7 @@ const PreFooter = () => {
   const isWipRoute = location.pathname === "/wip"
 
   return (
-    <div id="prefoot" className={`p-5 md:h-[30vh] flex items-center ${isWipRoute ? "hidden" : ""}`}>
+    <div id="prefoot" className={`flex items-center ${isWipRoute ? "hidden" : ""}`}>
       <div className="prefoot-content w-[80vw] mx-auto flex md:flex-row flex-col items-center">
         <div className="hidden-state from-left subscribe md:w-[40vw] w-full">
           <h4 className="md:text-2xl text-xl mb-2 md:m-0 font-bold">

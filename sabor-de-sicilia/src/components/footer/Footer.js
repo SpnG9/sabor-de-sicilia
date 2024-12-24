@@ -56,7 +56,7 @@ const Footer = () => {
           <button
             id="footer-logo-btn"
             type="button"
-            aria-label={t("footer.homepage")}
+            aria-label={t("aria-labels.home-btn")}
             onClick={() => redirectTo("/homepage")}
           />
         </div>

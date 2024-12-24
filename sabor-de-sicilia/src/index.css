@@ -81,3 +81,49 @@ body {
     left: -1ch;
   }
 }
+
+/* Responsive for accessibility */
+@media screen and (max-width: 1140px) {
+  /* Top nav */
+  .desktop-nav,
+  .main-nav-btn {
+    display: none !important;
+  }
+
+  .mobile-nav {
+    display: flex !important;
+  }
+
+  .right-nav {
+    justify-content: flex-end !important;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1504px) {
+  /* Top nav */
+  #top-nav-content {
+    padding: 0rem ;
+  }
+  #top-nav,
+  #top-nav button,
+  #top-nav p,
+  #top-nav a {
+    font-size: 0.7rem !important;
+  }
+
+  /* Main Nav */
+  #main-nav {
+    padding: 0.3rem;
+  }
+
+  #logo-btn {
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+
+  .main-nav-btn,
+  #reservation-btn {
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+}

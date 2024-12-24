@@ -2,17 +2,12 @@
   color: var(--dark);
 }
 
-.presentation h2, #prefoot h4 {
+.presentation h2 {
   font-family: var(--title);
 }
 
-.presentation p, #prefoot h6 {
+.presentation p {
   font-family: var(--content);
-}
-
-#prefoot {
-  background-color: var(--dark);
-  color: var(--secondary);
 }
 
 .hidden-state {

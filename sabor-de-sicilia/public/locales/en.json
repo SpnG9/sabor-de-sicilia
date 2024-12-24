@@ -59,8 +59,14 @@
       "location-home-card": "Go to the chiringuito presentation page"
     },
     "mobile-side-menu": {
+      "opened": "Close navigation menu",
+      "closed": "Open navigation menu",
       "menu-accordion": "Food and drinks menu",
-      "jobs-accordion": "Job opportunities"
+      "jobs-accordion": {
+        "label": "Jobs opportunities menu",
+        "foh": "Go to Front of House jobs opportunities",
+        "boh": "Go to Back of House jobs opportunities"
+      }
     },
     "prefoot-form": {
       "form-description": "Newsletter subscription form",

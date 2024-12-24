@@ -26,12 +26,12 @@ const Homepage = () => {
       >
         <h2 
           id="welcome-section" 
-          className="hidden-state from-right p-2 text-2xl font-bold"
+          className="hidden-state from-right p-2 text-3xl font-bold"
         >
           {t("pages.homepage.welcome-title")}
         </h2>
         <p 
-          className="hidden-state from-left p-2 mt-2 text-xl"
+          className="hidden-state from-left p-2 mt-2 text-2xl"
           aria-describedby="welcome-section"
         >
           {t("pages.homepage.welcome-content")}
@@ -67,18 +67,18 @@ const Homepage = () => {
       >
         <h2 
           id="journey-section" 
-          className="hidden-state from-left p-2 text-2xl font-bold"
+          className="hidden-state from-left p-2 text-3xl font-bold"
         >
           {t("pages.homepage.journey-title")}
         </h2>
         <p 
-          className="hidden-state from-left p-2 mt-2 text-xl"
+          className="hidden-state from-left p-2 mt-2 text-2xl"
           aria-describedby="journey-section"
         >
           {t("pages.homepage.journey-content")}
         </p>
       </section>
-      <section aria-labelledby="journey-section" className="my-5">
+      <section aria-labelledby="journey-section" className="my-3 p-5">
         <HomepageCard/>
       </section>
     </main>

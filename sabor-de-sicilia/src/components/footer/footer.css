@@ -27,6 +27,7 @@
   background-image: url("./../../assets/images/logo/secondary.png");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 12rem;
   width: 12rem;
   transition: 0.2s all ease-in-out;

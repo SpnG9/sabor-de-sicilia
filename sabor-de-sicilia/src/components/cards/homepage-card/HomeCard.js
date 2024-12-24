@@ -40,7 +40,7 @@ const HomeCards = () => {
   return (
     <nav
       aria-label="Quick Navigation"
-      className="hidden-state from-bottom flex flex-col items-center md:flex-row justify-between w-[70vw] mx-auto"
+      className="cards-nav hidden-state from-bottom flex flex-col items-center md:flex-row justify-between w-[70vw] mx-auto"
     >
       {cardData.map((card) => (
         <button
@@ -51,7 +51,7 @@ const HomeCards = () => {
           onClick={() => redirectTo(card.route)}
           aria-label={card.ariaLabel}
         >
-          <span className="tracking-wide">{card.label}</span>
+          <span className="tracking-wide text-xl">{card.label}</span>
         </button>
       ))}
     </nav>

@@ -13,8 +13,8 @@
 .homepage-card {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 20rem;
-  width: 15rem;
+  height: 25rem;
+  width: 18rem;
   border-radius: 15px;
   box-shadow: 0 3px 6px 2px #333;
   position: relative;
@@ -69,6 +69,11 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  .cards-nav {
+    flex-direction: column !important;
+  }
+
   #card-food {
     background-image: url("./../../../assets/images/homepage/cards/card-food-mobile.jpg");
   }
@@ -89,5 +94,12 @@
     height: 10rem;
     width: 20rem;
     background-position: center;
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1259px) {
+  .homepage-card {
+    margin: 0 1rem;
   }
 }

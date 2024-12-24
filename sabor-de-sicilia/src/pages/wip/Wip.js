@@ -16,30 +16,30 @@ function Wip() {
 
   return (
     <>
-      <div class="wrapper">
-        <div class="wrapper">
-          <span class="letter letter1">W</span>
-          <span class="letter letter2">O</span>
-          <span class="letter letter3">R</span>
-          <span class="letter letter4">K</span>
-          <span class="letter letter5"> </span>
-          <span class="letter letter6">I</span>
-          <span class="letter letter7">N</span>
-          <span class="letter letter8"> </span>
-          <span class="letter letter9">P</span>
-          <span class="letter letter10">R</span>
-          <span class="letter letter11">O</span>
-          <span class="letter letter12">G</span>
-          <span class="letter letter13">R</span>
-          <span class="letter letter14">E</span>
-          <span class="letter letter15">S</span>
-          <span class="letter letter16">S</span>
+      <div className="wrapper">
+        <div className="wrapper text-2xl">
+          <span className="letter letter1">W</span>
+          <span className="letter letter2">O</span>
+          <span className="letter letter3">R</span>
+          <span className="letter letter4">K</span>
+          <span className="letter letter5"> </span>
+          <span className="letter letter6">I</span>
+          <span className="letter letter7">N</span>
+          <span className="letter letter8"> </span>
+          <span className="letter letter9">P</span>
+          <span className="letter letter10">R</span>
+          <span className="letter letter11">O</span>
+          <span className="letter letter12">G</span>
+          <span className="letter letter13">R</span>
+          <span className="letter letter14">E</span>
+          <span className="letter letter15">S</span>
+          <span className="letter letter16">S</span>
         </div>
       </div>
       <div className="wip w-[90vw] mx-auto my-10 slideup">
-        <p className="text-4xl font-bold">{t("pages.wip.message")}</p>
+        <p className="md:text-4xl text-2xl font-bold">{t("pages.wip.message")}</p>
       </div>
-      <div className="w-[80vw] flex flex-row-reverse mx-auto">
+      <div className="w-[80vw] flex md:justify-end justify-center mx-auto mb-10">
         <button
           onClick={() => redirectTo("/homepage")}
           aria-label={t("main-nav.home")}

@@ -6,10 +6,7 @@ import useScroll from "../../hooks/useScroll";
 import "./menu.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleDown,
-  faChevronDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const MobileSideMenu = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -81,13 +78,13 @@ const MobileSideMenu = () => {
           }`}
       >
         {/* Menu Content */}
-        <nav className="p-4">
+        <nav className="p-4 dropdown-menu">
           <ul className="space-y-4" role="menu">
             <li role="none">
               <button
                 role="menuitem"
                 className="w-full flex justify-start items-center side-menu-btn"
-                onClick={() => redirectTo("/contacts")}
+                onClick={() => redirectTo("/wip")}
               >
                 {t("main-nav.contacts")}
               </button>
@@ -96,7 +93,7 @@ const MobileSideMenu = () => {
               <button
                 role="menuitem"
                 className="w-full flex justify-start items-center side-menu-btn"
-                onClick={() => redirectTo("/location")}
+                onClick={() => redirectTo("/wip")}
               >
                 {t("main-nav.location")}
               </button>
@@ -128,18 +125,23 @@ const MobileSideMenu = () => {
                   }`}
                 >
                   {openAccordionIndex === 0 && (
-                    <div role="menu" aria-label={t("mobile-side-menu.menu-accordion.label")}>
+                    <div
+                      role="menu"
+                      aria-label={t(
+                        "aria-labels.mobile-side-menu.menu-accordion"
+                      )}
+                    >
                       <button
                         role="menuitem"
-                        className="w-full flex text-sm italic font-light mt-2 mb-1"
-                        onClick={() => redirectTo("/menu/food")}
+                        className="w-full flex text-sm font-light mt-2 mb-1 ms-3 accordion-btn"
+                        onClick={() => redirectTo("/wip")}
                       >
                         {t("mobile-side-menu.menu-accordion.food")}
                       </button>
                       <button
                         role="menuitem"
-                        className="w-full flex text-sm italic font-light text-sm"
-                        onClick={() => redirectTo("/menu/drinks")}
+                        className="w-full flex text-sm font-light text-sm ms-3 accordion-btn"
+                        onClick={() => redirectTo("/wip")}
                       >
                         {t("mobile-side-menu.menu-accordion.drinks")}
                       </button>
@@ -152,7 +154,7 @@ const MobileSideMenu = () => {
               <button
                 role="menuitem"
                 className="w-full flex justify-start items-center side-menu-btn"
-                onClick={() => redirectTo("/events")}
+                onClick={() => redirectTo("/wip")}
               >
                 {t("main-nav.events")}
               </button>
@@ -184,18 +186,21 @@ const MobileSideMenu = () => {
                   }`}
                 >
                   {openAccordionIndex === 1 && (
-                    <div role="menu" aria-label={t("mobile-side-menu.jobs-accordion.label")}>
+                    <div
+                      role="menu"
+                      aria-label={t("mobile-side-menu.jobs-accordion.label")}
+                    >
                       <button
                         role="menuitem"
-                        className="w-full flex text-sm italic font-light mt-2 mb-1"
-                        onClick={() => redirectTo("/jobs/foh")}
+                        className="w-full flex text-sm font-light mt-2 mb-1 ms-3 accordion-btn"
+                        onClick={() => redirectTo("/wip")}
                       >
                         {t("mobile-side-menu.jobs-accordion.foh")}
                       </button>
                       <button
                         role="menuitem"
-                        className="w-full flex text-sm italic font-light text-sm"
-                        onClick={() => redirectTo("/jobs/boh")}
+                        className="w-full flex text-sm font-light text-sm ms-3 accordion-btn"
+                        onClick={() => redirectTo("/wip")}
                       >
                         {t("mobile-side-menu.jobs-accordion.boh")}
                       </button>
